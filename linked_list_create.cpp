@@ -15,8 +15,8 @@ void insert(int new_data)
     new_node->data = new_data;
     new_node->next = head;
     head = new_node;
-
 }
+
 void display()
 {
     Node *traverse = new Node();
