@@ -1,0 +1,68 @@
+BUBBLE SORT (SINKING SORT)
+    ->requires very less space memory
+    ->best case being O(n) it is beneficial in determining that array is sorted or not
+
+    ->it is inefficient for large data as the worst time case being O(n^2)
+
+    ->time complexity = O(n^2)
+    ->space complexity = O(1)
+
+INSERTION SORT 
+    ->picks one element at a time and place it in the correct position of the sorted array
+    ->efficient for small data
+    ->adaptive in nature that is it is appropriate for data sets which are already partially sorted
+
+    ->insertion sort takes maximum time if the elements are sorted in reverse order
+
+    ->time complexity O(n^2)
+    ->space complexity O(1)
+
+SELECTION SORT
+    ->selects the smallest element from the unsorted array in each iteration and places that in the begining of the array.
+    ->it maintains two subarray
+        ->one which is sorted
+        ->one which is not sorted
+    
+    ->time complexity O(n^2)
+    ->space complexity O(1)
+
+
+MERGE SORT
+    ->its consider an example of divide and conquer technique
+    ->it is a recursive algorithm 
+    ->in this array is divided into subarray till it cannot be divided into further smaller subarray 
+        i.e till only single elements is not left then the dividing will stop
+    ->finally when both halves are in a sorted order they are merged together by taking two different subarray and merging them 
+
+
+    ->slower comparative to the other sorting algorithm for smaller takes
+    ->requires additional memory space O(n) for the temporary array
+    ->it goes through the whole process even if the array is sorted
+
+    ->time complexity O(n logn)
+    ->space complexity O(n)
+
+
+QUICK SORT
+    ->just like merge sort it is also a divide and conquer algorithm
+    ->it picks an element as a pivot and partitions the given array around the picked pivot
+    ->the key process of quick sort is partitions
+    ->place the pivot element in its correct position and all the smaller element before it 
+    ->and ahead of the pivot being greater elements than the pivot
+    ->keep dividing till we cannot divide the subarray further that is single element is reached
+
+
+
+    ->TO SELECT PIVOT=========================================
+        ->Always pick the first element as a pivot.
+        ->Always pick the last element as a pivot 
+        ->Pick a random element as a pivot.
+        ->Pick median as the pivot.
+     
+COUNT SORT
+
+HEAP SORT
+
+RADIX SORT
+
+
