@@ -1,29 +1,21 @@
-class Node
-{
-    public:
-        int data;
-        Node *next;
-};
+BUBBLE SORT (SINKING SORT)
+    ->requires very less space memory
+    ->best case being O(n) it is beneficial in determining that array is sorted or not
 
-Node *head = new Node();
+    ->it is inefficient for large data as the worst time case being O(n^2)
 
-void insert(int new_data)
-{
-    Node *new_node = new Node();
-    new_node->data = new_data;
-    new_node->next = head;
-    head = new_node;
-}
-void display()
-{
-    Node *traverse = new Node();
-    traverse = head;
-    while(traverse!=NULL)
-    {
-        cout<<traverse->data<<" ";
-        traverse = traverse->next;
-    }
-}
+    ->time complexity = O(n^2)
+    ->space complexity = O(1)
+
+INSERTION SORT 
+    ->picks one element at a time and place it in the correct position of the sorted array
+    ->efficient for small data
+    ->adaptive in nature that is it is appropriate for data sets which are already partially sorted
+    
+    ->time complexity O(n^2)
+    ->
+
+
 
 
 
