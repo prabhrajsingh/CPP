@@ -58,8 +58,22 @@ QUICK SORT
         ->Always pick the last element as a pivot 
         ->Pick a random element as a pivot.
         ->Pick median as the pivot.
+
+    ->time complexity o(n logn)
+    ->space complexity o(1)
      
 COUNT SORT
+    ->based on keys between a specific range.
+    ->works by counting the number of distinct key values (kind of hashing)
+    ->it makes assumption about the data that the value will be in the given range of key values
+    ->unlike other algorithms it is not a comparision algo rather it hashes the value in temporary array 
+        and make it a non inplace algorithm.
+    ->counting sort is efficient if the range of input data is not significantly greater than the number of objects to be sorted.
+    ->it is a sub routine to another sorting algorithms like radix sort
+
+    ->time complexity O(n+k)
+    ->space complexity O(n+k)
+
 
 HEAP SORT
 
