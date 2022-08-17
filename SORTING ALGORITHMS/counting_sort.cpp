@@ -25,7 +25,7 @@ vector<int> counting_sort(vector<int> &V)
         count[i] += count[i-1]; 
     }
    
-    for (int i = n - 1; i >= 0; i--) 
+    for (int i = 0; i < n; i++) 
     {
         output[count[V[i]] - 1] = V[i];  
         count[V[i]]--;

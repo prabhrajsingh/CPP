@@ -76,7 +76,21 @@ COUNT SORT
 
 
 HEAP SORT
+    ->it is a comparision based sorting algorithm
+    ->it is similar to selection sort where we select the minimum element and place it in the begining.
+    ->repeat the same process for rest of the elements.
+    ->it is an unstable sorting algorithm
+    ->time required to perform heap sort is increased logarithmically while other grow exponentially
+    ->memory usage is minimal
+    ->mainly used in hybrid algorithms like intro sort
 
-RADIX SORT
+    ->has limited use as quick sort and merge sort are better in practice
+
+    ->time complexity O(n logn)
+    ->space complexity O(1)
 
 
+RADIX SORT - https://www.geeksforgeeks.org/radix-sort/
+SHELL SORT - https://www.geeksforgeeks.org/shellsort/
+COMB SORT - https://www.geeksforgeeks.org/comb-sort/
+PIGEONHOLE SORT - https://www.geeksforgeeks.org/pigeonhole-sort/
