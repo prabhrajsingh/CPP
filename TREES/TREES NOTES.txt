@@ -1,0 +1,69 @@
+TREES
+    A tree is non-linear and a hierarchical data structure consisting of a collection of nodes 
+        such that each node of the tree stores a value and a list of references to other nodes (the “children”).
+
+    Types of Tree data structures
+
+        1. General tree
+            A general tree data structure has no restriction on the number of nodes. 
+            It means that a parent node can have any number of child nodes.  
+
+        2. Binary tree  
+            A node of a binary tree can have a maximum of two child nodes. 
+
+        3. Balanced tree
+            If the height of the left sub-tree and the right sub-tree is equal or differs at most by 1, 
+            the tree is known as a balanced tree.  
+
+        4. Binary search tree
+            As the name implies, binary search trees are used for various searching and sorting algorithms.
+            The examples include AVL tree and red-black tree. It is a non-linear data structure. 
+            It shows that the value of the left node is less than its parent, 
+            while the value of the right node is greater than its parent.
+
+
+    Why Use Trees? 
+
+    1. One reason to use trees might be because you want to store information that naturally forms a hierarchy. 
+        For example, the file system on a computer: 
+                            file system
+                                ———–
+                                user <– root
+                                /    \
+                            . . .     home
+                            /           \
+                        ugrad        course
+                        /           /  |   \
+                    . . .      cs101 cs112  cs113
+
+    2. Trees (with some ordering e.g., BST) provide moderate access/search 
+        (quicker than Linked List and slower than arrays). 
+
+    3. Trees provide moderate insertion/deletion (quicker than Arrays and slower than Unordered Linked Lists). 
+
+    4. Like Linked Lists and unlike Arrays, 
+        Trees don’t have an upper limit on the number of nodes as nodes are linked using pointers.
+    
+
+    A Tree node contains the following parts. 
+        1. Data 
+        2. Pointer to the left child 
+        3. Pointer to the right child
+    
+
+    Basic Operation On Binary Tree:
+        > Inserting an element.
+        > Removing an element.
+        > Searching for an element.
+        > Traversing an element.
+            ---preorder ====> [root, left, right]
+            ---inorder  ====> [left, root, right]
+            ---postorder====> [left, right, root]
+        
+    
+
+    ->If you are given two traversal sequences, can you construct the binary tree?
+        ->It depends on what traversals are given. 
+        ->If one of the traversal methods is Inorder then the tree can be constructed, otherwise not.
+
+    
