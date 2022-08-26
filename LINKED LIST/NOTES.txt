@@ -1,0 +1,24 @@
+reversing a linked list 
+
+    NODE *current = head, *previous = null,     *NEXT;
+    while(current != NULL)
+    {
+        NEXT = current->next;
+        current->next = previous;
+        previous = current;
+        current = NEXT;
+    }
+    head = previous;
+
+
+Recursively-----------------------------
+
+    if(traverse->next = NULL)
+    {
+        head = traverse
+        return
+    }
+    reverse_recursive(Node *traverse);
+    Node *temp = traverse->next;
+    temp->next = traverse;
+    traverse->next = NULL;

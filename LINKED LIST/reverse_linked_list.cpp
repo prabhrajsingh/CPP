@@ -26,10 +26,10 @@ void display()
         traverse = traverse->next;
     }
 }
+
 void reverse_iterative()
 {
     Node *current_node, *previous_node, *next_node;
-    current_node = head;
     previous_node = NULL;
 
     if(head == NULL)
@@ -42,12 +42,28 @@ void reverse_iterative()
         while(current_node != NULL)
         {
             next_node = current_node->next;
+
             current_node->next = previous_node;
+
             previous_node = current_node;
             current_node = next_node;
         }
         head = previous_node;
     }
+}
+
+void reverse_recursive(Node *traverse)
+{
+    if(traverse->next == NULL)
+    {   
+        head = traverse;
+        return ;
+    }
+    reverse_recursive(traverse->next);
+
+    Node *temp = traverse->next;
+    temp->next = traverse;
+    traverse->next = NULL;
 }
 int main()
 {
@@ -59,6 +75,11 @@ int main()
     cout<<endl;
 
     reverse_iterative();
+    cout<<endl;
+    display();
+
+    cout<<endl;    
+    reverse_recursive(head);
     cout<<endl;
     display();
 }

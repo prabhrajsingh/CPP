@@ -1,0 +1,28 @@
+STACK
+    follows LIFO approach 
+    with the help of a top pointer 
+    used in recursion
+
+    |____|
+    |____|
+    |____|
+    |____|
+    |____|
+    |____|<------top              
+    
+    |____|
+    |__8_|<------top++
+    |__3_|
+    |__4_|
+    |__7_|
+    |__6_|
+
+
+QUEUE
+    follows FIFO approach
+    with two pointers called front and rather
+ 
+                 _________________________________
+    front------>|___|____|____|____|____|____|____|<------ rather
+
+    using these two pointer we can navigate through the queue
