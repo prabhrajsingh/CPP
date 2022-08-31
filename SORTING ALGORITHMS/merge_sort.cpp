@@ -1,8 +1,6 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-
-
 void merge(vector<int> &V, int start, int mid, int end)
 {
     int i = start, j = mid+1;

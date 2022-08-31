@@ -66,7 +66,7 @@ int main()
     Node *l1 = new Node();
     cout<<"ENTER THE NUMBER OF NODE IN LINKED LIST 1: ";
     cin>>n;
-    for(int i=1; i<=n; i++)
+    for(int i=0; i<n; i++)
     {
         insert(&l1, i);
     }
