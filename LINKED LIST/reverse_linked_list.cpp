@@ -42,9 +42,7 @@ void reverse_iterative()
         while(current_node != NULL)
         {
             next_node = current_node->next;
-
             current_node->next = previous_node;
-
             previous_node = current_node;
             current_node = next_node;
         }

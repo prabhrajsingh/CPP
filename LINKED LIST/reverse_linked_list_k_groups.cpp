@@ -1,13 +1,11 @@
 #include<iostream>
 using namespace std;
-
 class Node
 {
     public:
         int data;
         Node *next;
 };
-
 void insert(Node **head_ref, int new_data)
 {
     Node *new_node = new Node();
@@ -24,7 +22,6 @@ void display(Node *node)
         traverse = traverse->next;
     }
 }
-
 Node *reverseKGroup(Node *dummy_head, int k)
 {
     if(dummy_head == NULL)
@@ -40,7 +37,6 @@ Node *reverseKGroup(Node *dummy_head, int k)
         }
         check = check->next;
     }
-
     int count = 0;
     Node *current = dummy_head, *previous = NULL, *NEXT = NULL;
     while(current->next != NULL && count<k)
@@ -51,7 +47,6 @@ Node *reverseKGroup(Node *dummy_head, int k)
         current = NEXT;
         count++; //<-----------------------------------------very very important
     }
-
     if (NEXT != NULL)
     {
         dummy_head->next = reverseKGroup(NEXT, k);
