@@ -32,7 +32,8 @@ MERGE SORT
     ->it is a recursive algorithm 
     ->in this array is divided into subarray till it cannot be divided into further smaller subarray 
         i.e till only single elements is not left then the dividing will stop
-    ->finally when both halves are in a sorted order they are merged together by taking two different subarray and merging them 
+    ->finally when both halves are in a sorted order they are merged together by taking two different subarray 
+        and merging them 
 
 
     ->slower comparative to the other sorting algorithm for smaller takes

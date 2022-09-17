@@ -29,6 +29,7 @@
     "**/.vscode/**"
   ],
   "files.associations": {
-    "sstream": "cpp"
+    "sstream": "cpp",
+    "ostream": "cpp"
   }
 }

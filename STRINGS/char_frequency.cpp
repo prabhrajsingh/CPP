@@ -11,7 +11,6 @@ int main()
     cout<<"ENTER THE STRING :" ;
     getline(cin,s);
     int n = s.size();
-    int count;
     cout<<s<<endl;
     vector<int> freq(n, 0);
     for(int i = 0; i<n; i++)
@@ -35,12 +34,17 @@ int main()
     // {
     //     mpp[s[i]]++;
     // }
-    string word;
+    string word, revstring = " ";
     stringstream ss(s); 
+    cout<<endl;
     while(ss >> word)
     {
+        cout<<word<<endl;
+        revstring = word + " " + revstring;
         mpp[word]++;
     }
+    cout<<endl;
+    cout<<"REVERSE SENTENCE BUT KEEPING THE WORDS SAME  : "<<revstring<<endl;
     cout<<"\n\nDUPLICATES : \n";
     for(auto i : mpp)
     {
